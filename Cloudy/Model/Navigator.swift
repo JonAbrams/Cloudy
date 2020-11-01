@@ -32,7 +32,7 @@ class Navigator {
         }
 
         struct UserAgent {
-            static let chromeDesktop = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36"
+            static let chromeDesktop = "Mozilla/5.0 (X11; CrOS x86_64 13421.73.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.112 Safari/537.36"
         }
     }
 
@@ -50,7 +50,7 @@ class Navigator {
 
     /// Wrapper around user defaults saved user agent enabled / disabled flag
     var useManualUserAgent: Bool {
-        UserDefaults.standard.useManualUserAgent ?? false
+        UserDefaults.standard.useManualUserAgent
     }
 
     /// Map navigation address
